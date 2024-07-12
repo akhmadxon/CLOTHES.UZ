@@ -11,7 +11,7 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { auth } from "../../service/index";
 import { Notification } from "../../utils/index";
-import { signInValidationSchema } from "../../utils/validation";
+
 
 const Index = () => {
   const initialValues = {
@@ -57,7 +57,7 @@ const Index = () => {
           <Formik
             initialValues={initialValues}
             onSubmit={handleSubmit}
-            validationSchema={signInValidationSchema}
+            
           >
             {({ isSubmitting }) => (
               <Form>
@@ -105,28 +105,18 @@ const Index = () => {
                     ),
                   }}
                 />
-                {/* <p
-                  className="mb-3 cursor-pointer hover:text-blue-500"
-                  onClick={() => setOpen(true)}
-                >
-                  Parolni unutdingizmi?
-                </p> */}
+               
                 <Button
                   type="submit"
                   variant="contained"
                   color="primary"
                   fullWidth
                   disabled={isSubmitting}
-                  sx={{ marginBottom: "8px" }}
+                  sx={{ marginBottom: "8px" , backgroundColor: "black", "&:hover": { backgroundColor: "gray" }  }}
                 >
                   {isSubmitting ? "Signing" : "Sign In"}
                 </Button>
-                {/* <span
-                  onClick={() => navigate("/sign-up")}
-                  className=" text-blue-300 cursor-pointer hover:text-blue-500"
-                >
-                  Registration
-                </span> */}
+               
               </Form>
             )}
           </Formik>
