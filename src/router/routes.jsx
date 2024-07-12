@@ -1,6 +1,6 @@
 import CategoryIcon from "@mui/icons-material/Category";
 import ProductionQuantityLimitsIcon from "@mui/icons-material/ProductionQuantityLimits";
-import EngineeringIcon from '@mui/icons-material/Engineering';
+import PersonIcon from '@mui/icons-material/Person';
 const routes = [
   {
     path: "/",
@@ -15,7 +15,7 @@ const routes = [
   {
     path: "/workers",
     content: "Workers",
-    icon: <EngineeringIcon />,
+    icon: <PersonIcon />,
   },
 ];
 
