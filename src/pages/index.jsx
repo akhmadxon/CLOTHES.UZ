@@ -4,5 +4,5 @@ import Main from "./main";
 import Category from "./category";
 import Products from "./products";
 import Workers from "./workers";
-import ProductId from "./products/product-id"
-export {SignIn, Main, Category, Products, Workers , ProductId};
+
+export {SignIn, Main, Category, Products, Workers};

@@ -95,7 +95,7 @@ const Index = ({ open, handleClose, item }) => {
                     color="primary"
                     fullWidth
                     disabled={isSubmitting}
-                    sx={{ width: '100%' }}
+                    sx={{ width: '100%', backgroundColor: "black"}}
                   >
                     {isSubmitting ? "Saving..." : "Save"}
                   </Button>
